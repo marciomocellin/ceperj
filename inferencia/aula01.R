@@ -9,7 +9,7 @@ plot(predict(fm1, data.frame(speed = d), interval = 'confidence'))
 summary(fm1)
 anova(fm1)
 
-install.packages('languageserver', repos = 'https://cran.fiocruz.br/')
+
 x <- rnorm(15)
 y <- x + rnorm(15)
 
