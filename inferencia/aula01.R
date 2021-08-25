@@ -4,7 +4,7 @@ plot(cars, xlab = "Speed (mph)", ylab = "Stopping distance (ft)",
     las = 1, xlim = c(0, 25))
 d <- seq(0, 25, length.out = 200)
 fm1 <- lm(dist ~ speed, data = cars)
-lines(d, predict(fm1, data.frame(speed = d)), col = degree)
+lines(d, predict(fm1, data.frame(speed = d)), col = "red")
 plot(predict(fm1, data.frame(speed = d), interval = 'confidence'))
 summary(fm1)
 anova(fm1)
